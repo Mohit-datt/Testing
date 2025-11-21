@@ -1,0 +1,1314 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/powerup.o
+powerup CODE 0 CE CE 6 1 2
+$dist/default/production/IR_remot.X.production.o
+cinit CODE 0 1C36 1C36 42 1 2
+idloc IDLOC 5 200000 200000 10 1 1
+text0 CODE 0 1914 1914 84 1 2
+text1 CODE 0 1AC0 1AC0 52 1 2
+text2 CODE 0 1998 1998 66 1 2
+text3 CODE 0 120C 120C 1C8 1 2
+text4 CODE 0 F2E F2E 2DE 1 2
+text5 CODE 0 1852 1852 C2 1 2
+text6 CODE 0 1CB8 1CB8 36 1 2
+text7 CODE 0 1BF2 1BF2 44 1 2
+text8 CODE 0 16C0 16C0 CA 1 2
+text9 CODE 0 1F96 1F96 2 1 2
+text10 CODE 0 1C78 1C78 40 1 2
+text11 CODE 0 155C 155C 164 1 2
+text12 CODE 0 13D4 13D4 188 1 2
+text13 CODE 0 1D88 1D88 30 1 2
+text14 CODE 0 1ED4 1ED4 18 1 2
+text15 CODE 0 1E92 1E92 26 1 2
+text16 CODE 0 1B5E 1B5E 4A 1 2
+text17 CODE 0 1F30 1F30 E 1 2
+text18 CODE 0 1BA8 1BA8 4A 1 2
+text19 CODE 0 1F3E 1F3E E 1 2
+text20 CODE 0 1EB8 1EB8 1C 1 2
+text21 CODE 0 1A64 1A64 5C 1 2
+text22 CODE 0 1EEC 1EEC 18 1 2
+text23 CODE 0 1F92 1F92 4 1 2
+text24 CODE 0 1B12 1B12 4C 1 2
+text25 CODE 0 1F4C 1F4C E 1 2
+text26 CODE 0 1F5A 1F5A E 1 2
+text27 CODE 0 1F68 1F68 E 1 2
+text28 CODE 0 1DB8 1DB8 30 1 2
+text29 CODE 0 1F76 1F76 E 1 2
+text30 CODE 0 19FE 19FE 66 1 2
+text31 CODE 0 1F84 1F84 E 1 2
+text32 CODE 0 1DE8 1DE8 2E 1 2
+text34 CODE 0 1F04 1F04 16 1 2
+text35 CODE 0 1E42 1E42 28 1 2
+text36 CODE 0 1D24 1D24 32 1 2
+text37 CODE 0 1F98 1F98 2 1 2
+text38 CODE 0 1F1A 1F1A 16 1 2
+text39 CODE 0 1E6A 1E6A 28 1 2
+text40 CODE 0 1D56 1D56 32 1 2
+text41 CODE 0 1F9A 1F9A 2 1 2
+text42 CODE 0 1E16 1E16 2C 1 2
+text43 CODE 0 178A 178A C8 1 2
+text44 CODE 0 1CEE 1CEE 36 1 2
+text45 CODE 0 1F9C 1F9C 2 1 2
+nvBANK0 BANK0 1 D2 D2 1D 1 1
+cstackCOMRAM COMRAM 1 1 1 4D 1 1
+cstackBANK0 BANK0 1 AB AB 27 1 1
+temp COMRAM 1 57 57 1 1 1
+bssBANK0 BANK0 1 60 60 4B 1 1
+bssBANK1 BANK1 1 100 100 64 1 1
+intcode CODE 0 8 8 C6 1 2
+smallconst SMALLCONST 0 F00 F00 2E 1 2
+bssBIGRAM BIGRAM 1 164 164 7D0 1 1
+bssCOMRAM COMRAM 1 4E 4E 9 1 1
+config CONFIG 4 300000 300000 C 1 1
+$/tmp/xcXeEHBfA.o
+idloc IDLOC 5 200000 200000 10 1 1
+init CODE 0 D4 D4 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EF-FF 1
+RAM 934-E87 1
+SFR E8D-FFF 1
+BANK0 EF-FF 1
+BANK9 934-9FF 1
+CONST 4-7 1
+CONST D8-EFF 1
+CONST 1F9E-1FFFF 1
+SMALLCONST 1F9E-1FFFF 1
+CODE 4-7 1
+CODE D8-EFF 1
+CODE 1F9E-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-E87 1
+BIGRAM 58-5F 1
+BIGRAM EF-FF 1
+BIGRAM 934-E87 1
+BIGSFR E8D-FFF 1
+COMRAM 58-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1F9E-FFFF 1
+MEDIUMCONST 10F00-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/powerup.o
+CE powerup CODE >5:/home/mohit/MPLABXProjects/IR_remot.X/powerup.as
+D0 powerup CODE >6:/home/mohit/MPLABXProjects/IR_remot.X/powerup.as
+$dist/default/production/IR_remot.X.production.o
+8 intcode CODE >14566:/tmp/xcXcBbOkb.s
+8 intcode CODE >58:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+1A intcode CODE >61:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+28 intcode CODE >63:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+46 intcode CODE >65:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+4A intcode CODE >66:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+4E intcode CODE >67:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+6A intcode CODE >69:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+6E intcode CODE >70:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+72 intcode CODE >71:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+8E intcode CODE >73:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+92 intcode CODE >74:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+96 intcode CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+B2 intcode CODE >77:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+B6 intcode CODE >78:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+BA intcode CODE >82:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+BA intcode CODE >88:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+1F9C text45 CODE >311:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1F9C text45 CODE >314:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1CEE text44 CODE >298:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1CEE text44 CODE >301:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1CF2 text44 CODE >303:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1D08 text44 CODE >304:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1D22 text44 CODE >305:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+178A text43 CODE >101:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+178A text43 CODE >106:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+178E text43 CODE >109:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1792 text43 CODE >110:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1796 text43 CODE >112:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+179E text43 CODE >114:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+17B6 text43 CODE >116:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+17D4 text43 CODE >119:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+17DC text43 CODE >125:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1800 text43 CODE >127:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1830 text43 CODE >128:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1834 text43 CODE >131:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1850 text43 CODE >154:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1E16 text42 CODE >15:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1E16 text42 CODE >19:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1E34 text42 CODE >22:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1E3C text42 CODE >23:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1E40 text42 CODE >25:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1F9A text41 CODE >189:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F9A text41 CODE >192:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1D56 text40 CODE >176:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1D56 text40 CODE >179:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1D6C text40 CODE >181:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1D86 text40 CODE >183:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E6A text39 CODE >127:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E6A text39 CODE >129:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E78 text39 CODE >132:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E7A text39 CODE >135:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E7E text39 CODE >136:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E82 text39 CODE >139:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E84 text39 CODE >140:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E88 text39 CODE >144:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E8C text39 CODE >145:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1E90 text39 CODE >147:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F1A text38 CODE >164:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F1A text38 CODE >168:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F1E text38 CODE >169:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F2A text38 CODE >173:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F2E text38 CODE >174:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F98 text37 CODE >189:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F98 text37 CODE >192:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1D24 text36 CODE >176:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1D24 text36 CODE >179:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1D3A text36 CODE >181:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1D54 text36 CODE >183:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E42 text35 CODE >127:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E42 text35 CODE >129:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E50 text35 CODE >132:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E52 text35 CODE >135:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E56 text35 CODE >136:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E5A text35 CODE >139:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E5C text35 CODE >140:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E60 text35 CODE >144:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E64 text35 CODE >145:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E68 text35 CODE >147:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F04 text34 CODE >164:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F04 text34 CODE >168:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F08 text34 CODE >169:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F14 text34 CODE >173:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F18 text34 CODE >174:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1DE8 text32 CODE >138:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1DEA text32 CODE >141:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1DEE text32 CODE >144:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1DF0 text32 CODE >147:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1DF2 text32 CODE >150:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1DF4 text32 CODE >154:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1DF4 text32 CODE >156:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1E02 text32 CODE >160:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1E14 text32 CODE >161:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1F84 text31 CODE >307:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1F84 text31 CODE >308:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1F90 text31 CODE >309:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+19FE text30 CODE >63:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+19FE text30 CODE >67:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A02 text30 CODE >69:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A06 text30 CODE >71:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A0A text30 CODE >73:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A0E text30 CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A12 text30 CODE >77:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A16 text30 CODE >79:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A1A text30 CODE >81:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A20 text30 CODE >83:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A24 text30 CODE >85:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A28 text30 CODE >87:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A2C text30 CODE >89:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A30 text30 CODE >91:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A34 text30 CODE >93:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A38 text30 CODE >95:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A3C text30 CODE >97:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A40 text30 CODE >99:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A44 text30 CODE >101:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A48 text30 CODE >103:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A4C text30 CODE >106:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A50 text30 CODE >108:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A52 text30 CODE >110:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1A62 text30 CODE >112:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/adcc.c
+1F76 text29 CODE >156:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1F76 text29 CODE >157:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1F82 text29 CODE >158:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DB8 text28 CODE >67:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DB8 text28 CODE >72:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DBC text28 CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DC0 text28 CODE >78:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DC4 text28 CODE >81:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DC8 text28 CODE >84:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DD8 text28 CODE >87:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DE0 text28 CODE >90:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DE4 text28 CODE >93:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1DE6 text28 CODE >94:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/ccp2.c
+1F68 text27 CODE >165:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F68 text27 CODE >166:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F74 text27 CODE >167:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F5A text26 CODE >157:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F5A text26 CODE >158:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F66 text26 CODE >159:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F4C text25 CODE >161:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F4C text25 CODE >162:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F58 text25 CODE >163:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B12 text24 CODE >66:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B12 text24 CODE >71:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B18 text24 CODE >74:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B1C text24 CODE >77:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B20 text24 CODE >80:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B24 text24 CODE >83:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B28 text24 CODE >86:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B38 text24 CODE >87:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B48 text24 CODE >88:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B58 text24 CODE >90:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1B5C text24 CODE >92:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1F92 text23 CODE >52:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+1F92 text23 CODE >55:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+1F94 text23 CODE >56:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/interrupt_manager.c
+1EEC text22 CODE >63:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EEC text22 CODE >66:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EF2 text22 CODE >68:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EF6 text22 CODE >70:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EFA text22 CODE >72:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EFE text22 CODE >74:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1F02 text22 CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1A64 text21 CODE >55:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A64 text21 CODE >60:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A68 text21 CODE >61:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A6C text21 CODE >62:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A70 text21 CODE >67:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A74 text21 CODE >68:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A76 text21 CODE >69:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A7A text21 CODE >74:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A80 text21 CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A84 text21 CODE >76:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A88 text21 CODE >81:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A8C text21 CODE >82:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A90 text21 CODE >83:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A94 text21 CODE >84:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A98 text21 CODE >89:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1A9C text21 CODE >90:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AA0 text21 CODE >91:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AA4 text21 CODE >96:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AA6 text21 CODE >97:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AA8 text21 CODE >98:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AAA text21 CODE >103:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AAC text21 CODE >104:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AAE text21 CODE >105:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AB0 text21 CODE >106:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1AB4 text21 CODE >115:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1ABA text21 CODE >116:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1ABE text21 CODE >117:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/pin_manager.c
+1EB8 text20 CODE >77:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EB8 text20 CODE >80:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EBE text20 CODE >82:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EC2 text20 CODE >84:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EC6 text20 CODE >86:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1ECA text20 CODE >88:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1ECE text20 CODE >90:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1ED2 text20 CODE >91:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1F3E text19 CODE >185:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F3E text19 CODE >186:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F4A text19 CODE >187:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BA8 text18 CODE >64:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BA8 text18 CODE >69:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BAC text18 CODE >72:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BB0 text18 CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BB4 text18 CODE >78:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BB8 text18 CODE >81:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BBC text18 CODE >84:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BC0 text18 CODE >87:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BD8 text18 CODE >90:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BDC text18 CODE >93:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BEC text18 CODE >96:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1BF0 text18 CODE >97:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr1.c
+1F30 text17 CODE >185:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F30 text17 CODE >186:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1F3C text17 CODE >187:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B5E text16 CODE >64:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B5E text16 CODE >69:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B62 text16 CODE >72:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B66 text16 CODE >75:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B6A text16 CODE >78:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B6E text16 CODE >81:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B72 text16 CODE >84:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B76 text16 CODE >87:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B8E text16 CODE >90:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1B92 text16 CODE >93:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1BA2 text16 CODE >96:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1BA6 text16 CODE >97:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/tmr3.c
+1E92 text15 CODE >50:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1E92 text15 CODE >52:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1E96 text15 CODE >53:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1E9A text15 CODE >54:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1E9E text15 CODE >55:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EA2 text15 CODE >56:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EA6 text15 CODE >57:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EAA text15 CODE >58:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EAE text15 CODE >59:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EB2 text15 CODE >60:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1EB6 text15 CODE >61:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/mcc.c
+1ED4 text14 CODE >132:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1ED6 text14 CODE >134:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1ED6 text14 CODE >136:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1EE6 text14 CODE >138:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1EEA text14 CODE >139:/home/mohit/MPLABXProjects/IR_remot.X/mcc_generated_files/eusart2.c
+1D88 text13 CODE >10:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1D88 text13 CODE >12:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1D8C text13 CODE >13:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1D9E text13 CODE >12:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1DB6 text13 CODE >14:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+13D4 text12 CODE >9:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+13D4 text12 CODE >15:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+13D8 text12 CODE >16:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+13E6 text12 CODE >17:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1406 text12 CODE >18:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+140A text12 CODE >20:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1418 text12 CODE >21:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1438 text12 CODE >22:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+143C text12 CODE >24:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1448 text12 CODE >25:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1466 text12 CODE >26:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+146A text12 CODE >27:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+146E text12 CODE >28:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1480 text12 CODE >29:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1482 text12 CODE >27:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1490 text12 CODE >32:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+14A2 text12 CODE >33:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+14D0 text12 CODE >34:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+14F0 text12 CODE >35:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+14F2 text12 CODE >37:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+1504 text12 CODE >38:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+150A text12 CODE >40:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+151A text12 CODE >41:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+153A text12 CODE >42:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+155A text12 CODE >43:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aodiv.c
+155C text11 CODE >9:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+155C text11 CODE >14:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1560 text11 CODE >15:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+156E text11 CODE >16:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+158E text11 CODE >17:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1592 text11 CODE >19:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15A0 text11 CODE >20:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15C0 text11 CODE >21:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15DE text11 CODE >22:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15E2 text11 CODE >23:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15E6 text11 CODE >24:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15F8 text11 CODE >25:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+15FA text11 CODE >23:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1608 text11 CODE >28:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1636 text11 CODE >29:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1656 text11 CODE >30:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1668 text11 CODE >31:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+166E text11 CODE >33:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+167E text11 CODE >34:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+169E text11 CODE >35:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+16BE text11 CODE >36:/opt/microchip/xc8/v2.35/pic/sources/c99/common/aomod.c
+1C78 text10 CODE >1:/opt/microchip/xc8/v2.35/pic/sources/c99/common/abs.c
+1C78 text10 CODE >3:/opt/microchip/xc8/v2.35/pic/sources/c99/common/abs.c
+1CB6 text10 CODE >4:/opt/microchip/xc8/v2.35/pic/sources/c99/common/abs.c
+1F96 text9 CODE >7:/opt/microchip/xc8/v2.35/pic/sources/c99/common/putch.c
+1F96 text9 CODE >9:/opt/microchip/xc8/v2.35/pic/sources/c99/common/putch.c
+16C0 text8 CODE >8:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+16C0 text8 CODE >12:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+16E4 text8 CODE >13:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+16EA text8 CODE >14:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+16EE text8 CODE >15:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+1742 text8 CODE >18:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+1776 text8 CODE >20:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+1788 text8 CODE >24:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputc.c
+1BF2 text7 CODE >8:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1BF2 text7 CODE >13:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1BFA text7 CODE >14:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1BFE text7 CODE >15:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1C10 text7 CODE >16:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1C14 text7 CODE >14:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1C34 text7 CODE >19:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_fputs.c
+1CB8 text6 CODE >5:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1CB8 text6 CODE >7:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1CC0 text6 CODE >8:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1CC4 text6 CODE >9:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1CC8 text6 CODE >8:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1CE0 text6 CODE >11:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1CEC text6 CODE >12:/opt/microchip/xc8/v2.35/pic/sources/c99/common/strlen.c
+1852 text5 CODE >72:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1852 text5 CODE >77:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1860 text5 CODE >78:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1874 text5 CODE >82:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1896 text5 CODE >83:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+189E text5 CODE >84:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+18A2 text5 CODE >85:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+18B6 text5 CODE >86:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+18BA text5 CODE >84:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+18D8 text5 CODE >90:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+18E6 text5 CODE >91:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+18FA text5 CODE >94:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1912 text5 CODE >95:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+F2E text4 CODE >287:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+F2E text4 CODE >293:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+F4E text4 CODE >294:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+F64 text4 CODE >295:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+F76 text4 CODE >296:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+F96 text4 CODE >300:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+FA4 text4 CODE >301:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+FA6 text4 CODE >303:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+FD4 text4 CODE >304:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+FDC text4 CODE >305:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+FFC text4 CODE >306:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1002 text4 CODE >310:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+100A text4 CODE >311:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1010 text4 CODE >312:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1014 text4 CODE >313:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+101A text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1046 text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+104A text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+104E text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1052 text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1056 text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+105A text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+105E text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1062 text4 CODE >314:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+109C text4 CODE >315:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10A2 text4 CODE >316:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10A8 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10C8 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10CC text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10D0 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10D4 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10D8 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10DC text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10E0 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+10E4 text4 CODE >317:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+110C text4 CODE >312:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1186 text4 CODE >321:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+11A6 text4 CODE >322:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+11AC text4 CODE >323:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+11E2 text4 CODE >327:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+120A text4 CODE >328:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+120C text3 CODE >692:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+120C text3 CODE >702:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1234 text3 CODE >703:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1242 text3 CODE >705:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1254 text3 CODE >706:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1258 text3 CODE >847:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+12A8 text3 CODE >849:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+12B6 text3 CODE >850:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+12F0 text3 CODE >852:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1328 text3 CODE >1372:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1350 text3 CODE >1373:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+135E text3 CODE >1374:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1372 text3 CODE >1375:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+137E text3 CODE >1379:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+138C text3 CODE >1380:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1398 text3 CODE >1384:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+13C0 text3 CODE >1385:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+13D2 text3 CODE >1387:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1998 text2 CODE >1390:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1998 text2 CODE >1395:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+19A0 text2 CODE >1396:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+19AA text2 CODE >1397:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+19AE text2 CODE >1398:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+19D4 text2 CODE >1397:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+19F4 text2 CODE >1400:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+19FC text2 CODE >1404:/opt/microchip/xc8/v2.35/pic/sources/c99/common/doprnt.c
+1AC0 text1 CODE >9:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1AC0 text1 CODE >15:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1ACA text1 CODE >16:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1AD2 text1 CODE >17:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1ADA text1 CODE >18:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1AE2 text1 CODE >19:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1AFE text1 CODE >20:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1B10 text1 CODE >23:/opt/microchip/xc8/v2.35/pic/sources/c99/common/nf_sprintf.c
+1914 text0 CODE >26:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1914 text0 CODE >28:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1918 text0 CODE >30:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+191A text0 CODE >31:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+191C text0 CODE >32:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+192C text0 CODE >34:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+192C text0 CODE >36:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+193A text0 CODE >37:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1948 text0 CODE >39:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1966 text0 CODE >40:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1972 text0 CODE >41:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1978 text0 CODE >42:/home/mohit/MPLABXProjects/IR_remot.X/main.c
+1C36 cinit CODE >9296:/tmp/xcXcBbOkb.s
+1C36 cinit CODE >9298:/tmp/xcXcBbOkb.s
+1C36 cinit CODE >9301:/tmp/xcXcBbOkb.s
+1C36 cinit CODE >9366:/tmp/xcXcBbOkb.s
+1C3A cinit CODE >9367:/tmp/xcXcBbOkb.s
+1C3E cinit CODE >9368:/tmp/xcXcBbOkb.s
+1C3E cinit CODE >9369:/tmp/xcXcBbOkb.s
+1C40 cinit CODE >9370:/tmp/xcXcBbOkb.s
+1C42 cinit CODE >9371:/tmp/xcXcBbOkb.s
+1C44 cinit CODE >9372:/tmp/xcXcBbOkb.s
+1C46 cinit CODE >9373:/tmp/xcXcBbOkb.s
+1C48 cinit CODE >9374:/tmp/xcXcBbOkb.s
+1C4A cinit CODE >9377:/tmp/xcXcBbOkb.s
+1C4E cinit CODE >9378:/tmp/xcXcBbOkb.s
+1C50 cinit CODE >9379:/tmp/xcXcBbOkb.s
+1C50 cinit CODE >9380:/tmp/xcXcBbOkb.s
+1C52 cinit CODE >9381:/tmp/xcXcBbOkb.s
+1C54 cinit CODE >9382:/tmp/xcXcBbOkb.s
+1C56 cinit CODE >9385:/tmp/xcXcBbOkb.s
+1C5A cinit CODE >9386:/tmp/xcXcBbOkb.s
+1C5C cinit CODE >9387:/tmp/xcXcBbOkb.s
+1C5C cinit CODE >9388:/tmp/xcXcBbOkb.s
+1C5E cinit CODE >9389:/tmp/xcXcBbOkb.s
+1C60 cinit CODE >9390:/tmp/xcXcBbOkb.s
+1C62 cinit CODE >9393:/tmp/xcXcBbOkb.s
+1C66 cinit CODE >9394:/tmp/xcXcBbOkb.s
+1C68 cinit CODE >9395:/tmp/xcXcBbOkb.s
+1C68 cinit CODE >9396:/tmp/xcXcBbOkb.s
+1C6A cinit CODE >9397:/tmp/xcXcBbOkb.s
+1C6C cinit CODE >9398:/tmp/xcXcBbOkb.s
+1C6E cinit CODE >9404:/tmp/xcXcBbOkb.s
+1C6E cinit CODE >9406:/tmp/xcXcBbOkb.s
+1C70 cinit CODE >9407:/tmp/xcXcBbOkb.s
+1C72 cinit CODE >9408:/tmp/xcXcBbOkb.s
+1C74 cinit CODE >9409:/tmp/xcXcBbOkb.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/IR_remot.X.production.o
+__Hspace_0 1F9E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hspace_1 934 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hspace_3 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hspace_4 60000C 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+TMR3_SetInterruptHandler@InterruptHandler 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_TMR3_SetInterruptHandler 1F3E 0 CODE 0 text17 dist/default/production/IR_remot.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/IR_remot.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXeEHBfA.o
+__end_of_IRAddress F2A 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/IR_remot.X.production.o
+__Hudata_bank0 0 0 ABS 0 udata_bank0 dist/default/production/IR_remot.X.production.o
+__Hudata_bank1 0 0 ABS 0 udata_bank1 dist/default/production/IR_remot.X.production.o
+__Hudata_bank2 0 0 ABS 0 udata_bank2 dist/default/production/IR_remot.X.production.o
+__Hudata_bank3 0 0 ABS 0 udata_bank3 dist/default/production/IR_remot.X.production.o
+__Hudata_bank4 0 0 ABS 0 udata_bank4 dist/default/production/IR_remot.X.production.o
+__Hudata_bank5 0 0 ABS 0 udata_bank5 dist/default/production/IR_remot.X.production.o
+__Hudata_bank6 0 0 ABS 0 udata_bank6 dist/default/production/IR_remot.X.production.o
+__Hudata_bank7 0 0 ABS 0 udata_bank7 dist/default/production/IR_remot.X.production.o
+__Hudata_bank8 0 0 ABS 0 udata_bank8 dist/default/production/IR_remot.X.production.o
+__Hudata_bank9 0 0 ABS 0 udata_bank9 dist/default/production/IR_remot.X.production.o
+__end_of_INTERRUPT_Initialize 1F96 0 CODE 0 text23 dist/default/production/IR_remot.X.production.o
+_T1CONbits FCF 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD_Initialize 1EB8 0 CODE 0 text20 dist/default/production/IR_remot.X.production.o
+_jj 53 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+_kk 52 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+_kl 86 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+_tt 84 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+?_abs 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+?_pad 19 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+?_vfprintf B5 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+__Lsmallconst F00 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+_LATA F83 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_LATB F84 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_LATC F85 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD0 EE1 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD1 EE2 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD2 EE3 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD3 EE4 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD4 EE5 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PMD5 EE6 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TMR3 FC7 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_WPUA F10 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_WPUB F18 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_WPUC F20 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_WPUE F2D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXeEHBfA.o
+_dbuf 8B 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+_dtoa F2E 0 CODE 0 text4 dist/default/production/IR_remot.X.production.o
+_main 1914 0 CODE 0 text0 dist/default/production/IR_remot.X.production.o
+_nout 80 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+_prec 4E 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+abs@a 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+btemp 57 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+_SendToUart 1D88 0 CODE 0 text13 dist/default/production/IR_remot.X.production.o
+pad@i 20 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+pad@p 1D 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+pad@w 22 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production/IR_remot.X.production.o
+start D4 0 CODE 0 init /tmp/xcXeEHBfA.o
+___aomod@counter 19 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+EUSART2_SetOverrunErrorHandler@interruptHandler 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_SendBuf 100 0 BANK1 1 bssBANK1 dist/default/production/IR_remot.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/IR_remot.X.production.o
+_RC2STAbits E9D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+pad@fp 19 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_IRAddress F19 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+?_ADCC_GetSingleConversion 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__Hpowerup D4 0 CODE 0 powerup dist/default/production/IR_remot.X.production.o
+__end_of_vfpfcnvrt 13D4 0 CODE 0 text3 dist/default/production/IR_remot.X.production.o
+ttemp5 58 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+ttemp6 5B 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+ttemp7 5F 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+CCP2_CaptureISR@module 3 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production/IR_remot.X.production.o
+__accesstop 60 0 ABS 0 - /tmp/xcXeEHBfA.o
+intlevel0 0 0 CODE 0 text /tmp/xcXeEHBfA.o
+intlevel1 0 0 CODE 0 text /tmp/xcXeEHBfA.o
+intlevel2 0 0 CODE 0 text /tmp/xcXeEHBfA.o
+intlevel3 0 0 CODE 0 text /tmp/xcXeEHBfA.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_EUSART2_Initialize 1B5E 0 CODE 0 text24 dist/default/production/IR_remot.X.production.o
+__end_of_ADCC_DefaultInterruptHandler 1F9E 0 CODE 0 text45 dist/default/production/IR_remot.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/IR_remot.X.production.o
+wtemp8 58 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+_CCP2_DefaultCallBack 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_DecodedIRKey 54 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/IR_remot.X.production.o
+__end_of_PMD_Initialize 1ED4 0 CODE 0 text20 dist/default/production/IR_remot.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/IR_remot.X.production.o
+_vfpfcnvrt 120C 0 CODE 0 text3 dist/default/production/IR_remot.X.production.o
+dtoa@fp 24 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_TMR1_DefaultInterruptHandler 1F9C 0 CODE 0 text41 dist/default/production/IR_remot.X.production.o
+__end_of_TMR3_Initialize 1BA8 0 CODE 0 text16 dist/default/production/IR_remot.X.production.o
+__end_of_TMR3_WriteTimer 1E6A 0 CODE 0 text35 dist/default/production/IR_remot.X.production.o
+_ADACCH F71 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADACCL F70 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON0 F60 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON1 F59 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON2 F5A 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON3 F5B 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADERRH F6F 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADERRL F6E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADLTHH F6B 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADLTHL F6A 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADRESH F64 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADRESL F63 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADSTAT F65 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADUTHH F6D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADUTHL F6C 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_SendToUart 1DB8 0 CODE 0 text13 dist/default/production/IR_remot.X.production.o
+_ANSELA F11 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ANSELB F19 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ANSELC F21 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXeEHBfA.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXeEHBfA.o
+_CCPR2H FA7 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_CCPR2L FA6 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_INTERRUPT_InterruptManager CE 0 CODE 0 intcode dist/default/production/IR_remot.X.production.o
+_TMR3_DefaultInterruptHandler 1F98 0 CODE 0 text37 dist/default/production/IR_remot.X.production.o
+_EUSART2_SetErrorHandler 1F68 0 CODE 0 text27 dist/default/production/IR_remot.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/IR_remot.X.production.o
+__end_of_Tmr1_intt 1E42 0 CODE 0 text42 dist/default/production/IR_remot.X.production.o
+_EUSART2_Initialize 1B12 0 CODE 0 text24 dist/default/production/IR_remot.X.production.o
+__end_of_CCP2_Initialize 1DE8 0 CODE 0 text28 dist/default/production/IR_remot.X.production.o
+ADCC_GetSingleConversion@channel D 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_EUSART2_SetErrorHandler 1F76 0 CODE 0 text27 dist/default/production/IR_remot.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/IR_remot.X.production.o
+_ADCC_ISR 1CEE 0 CODE 0 text44 dist/default/production/IR_remot.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/IR_remot.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production/IR_remot.X.production.o
+__Hintcodelo CE 0 CODE 0 intcodelo dist/default/production/IR_remot.X.production.o
+EUSART2_SetErrorHandler@interruptHandler 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of___aodiv 155C 0 CODE 0 text12 dist/default/production/IR_remot.X.production.o
+__end_of___aomod 16C0 0 CODE 0 text11 dist/default/production/IR_remot.X.production.o
+___aodiv@quotient 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_ADCC_ISR 1D24 0 CODE 0 text44 dist/default/production/IR_remot.X.production.o
+_INLVLA F0D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_INLVLB F15 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_INLVLC F1D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_INLVLE F2A 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+?_strlen 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_Tmr1_intt 1E16 0 CODE 0 text42 dist/default/production/IR_remot.X.production.o
+___aomod@dividend 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__Hudata_bank10 0 0 ABS 0 udata_bank10 dist/default/production/IR_remot.X.production.o
+__Hudata_bank11 0 0 ABS 0 udata_bank11 dist/default/production/IR_remot.X.production.o
+__Hudata_bank12 0 0 ABS 0 udata_bank12 dist/default/production/IR_remot.X.production.o
+__Hudata_bank13 0 0 ABS 0 udata_bank13 dist/default/production/IR_remot.X.production.o
+__Hudata_bank14 0 0 ABS 0 udata_bank14 dist/default/production/IR_remot.X.production.o
+_TMR3_Initialize 1B5E 0 CODE 0 text16 dist/default/production/IR_remot.X.production.o
+_TMR3_WriteTimer 1E42 0 CODE 0 text35 dist/default/production/IR_remot.X.production.o
+__Lintcodelo CE 0 CODE 0 intcodelo dist/default/production/IR_remot.X.production.o
+_PIN_MANAGER_Initialize 1A64 0 CODE 0 text21 dist/default/production/IR_remot.X.production.o
+___aomod@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_MyTBuf 164 0 BIGRAM 1 bssBIGRAM dist/default/production/IR_remot.X.production.o
+start_initialization 1C36 0 CODE 0 cinit dist/default/production/IR_remot.X.production.o
+_ODCONA F0F 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ODCONB F17 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ODCONC F1F 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_CCPTMRSbits FAE 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_OSCFRQ EDE 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/IR_remot.X.production.o
+_CCP2_CallBack D8 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+EUSART2_SetFramingErrorHandler@interruptHandler 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_CCP2_Initialize 1DB8 0 CODE 0 text28 dist/default/production/IR_remot.X.production.o
+_ADFLTRH F73 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADFLTRL F72 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADPREVH F62 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADPREVL F61 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADSTPTH F69 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADSTPTL F68 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_RC2REG E99 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_RC2STA E9D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_RC7PPS EFE 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_SYSTEM_Initialize 1EB8 0 CODE 0 text15 dist/default/production/IR_remot.X.production.o
+_T3GCONbits FCA 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_Rotate 55 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+__pcstackBANK0 AB 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+_T1GATE FD1 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T1GCON FD0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T3GATE FCB 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T3GCON FCA 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_KEYCODE F01 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+_TX2REG E9A 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TX2STA E9E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_ADCC_GetSingleConversion 1E16 0 CODE 0 text32 dist/default/production/IR_remot.X.production.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXeEHBfA.o
+__end_of_TMR1_SetInterruptHandler 1F4C 0 CODE 0 text19 dist/default/production/IR_remot.X.production.o
+fputc@fp B 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+fputs@fp 14 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+EUSART2_Write@txData 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_ADCC_Initialize 1A64 0 CODE 0 text30 dist/default/production/IR_remot.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/IR_remot.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/IR_remot.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/IR_remot.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/IR_remot.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/IR_remot.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/IR_remot.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production/IR_remot.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production/IR_remot.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production/IR_remot.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production/IR_remot.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production/IR_remot.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production/IR_remot.X.production.o
+__Hedata 0 0 ABS 0 edata dist/default/production/IR_remot.X.production.o
+__end_of_strlen 1CEE 0 CODE 0 text6 dist/default/production/IR_remot.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production/IR_remot.X.production.o
+__Hidloc 200010 0 IDLOC 5 idloc dist/default/production/IR_remot.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/IR_remot.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production/IR_remot.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/IR_remot.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production/IR_remot.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production/IR_remot.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production/IR_remot.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production/IR_remot.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production/IR_remot.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production/IR_remot.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production/IR_remot.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production/IR_remot.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production/IR_remot.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production/IR_remot.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production/IR_remot.X.production.o
+__Hudata 0 0 ABS 0 udata dist/default/production/IR_remot.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production/IR_remot.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production/IR_remot.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production/IR_remot.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production/IR_remot.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production/IR_remot.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/IR_remot.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production/IR_remot.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production/IR_remot.X.production.o
+__smallconst F00 0 SMALLCONST 0 smallconst /tmp/xcXeEHBfA.o
+_BAUD2CON E9F 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_sprintf 1B12 0 CODE 0 text1 dist/default/production/IR_remot.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production/IR_remot.X.production.o
+__Hconfig 30000C 0 CONFIG 4 config dist/default/production/IR_remot.X.production.o
+TMR3_WriteTimer@timerVal 1 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/IR_remot.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/IR_remot.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/IR_remot.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/IR_remot.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/IR_remot.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/IR_remot.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production/IR_remot.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production/IR_remot.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production/IR_remot.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production/IR_remot.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production/IR_remot.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production/IR_remot.X.production.o
+__Ledata 0 0 ABS 0 edata dist/default/production/IR_remot.X.production.o
+_T1GCONbits FD0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production/IR_remot.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production/IR_remot.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/IR_remot.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production/IR_remot.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/IR_remot.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production/IR_remot.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production/IR_remot.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production/IR_remot.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production/IR_remot.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production/IR_remot.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production/IR_remot.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production/IR_remot.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production/IR_remot.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production/IR_remot.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production/IR_remot.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production/IR_remot.X.production.o
+__Ludata 0 0 ABS 0 udata dist/default/production/IR_remot.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/IR_remot.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/IR_remot.X.production.o
+_PORTBbits F8E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_INTERRUPT_Initialize 1F92 0 CODE 0 text23 dist/default/production/IR_remot.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production/IR_remot.X.production.o
+__Hcode 0 0 ABS 0 code dist/default/production/IR_remot.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production/IR_remot.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production/IR_remot.X.production.o
+__Hinit D8 0 CODE 0 init dist/default/production/IR_remot.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/IR_remot.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/IR_remot.X.production.o
+__Htemp 58 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production/IR_remot.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production/IR_remot.X.production.o
+__Lcode 0 0 ABS 0 code dist/default/production/IR_remot.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production/IR_remot.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production/IR_remot.X.production.o
+__Linit D4 0 CODE 0 init dist/default/production/IR_remot.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/IR_remot.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/IR_remot.X.production.o
+__Ltemp 57 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production/IR_remot.X.production.o
+__pnvBANK0 D2 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+___aodiv@counter 19 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+___aomod@sign 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/IR_remot.X.production.o
+int$flags 57 0 COMRAM 1 temp dist/default/production/IR_remot.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production/IR_remot.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production/IR_remot.X.production.o
+__S0 1F9E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__S1 934 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__S3 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__S4 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__S5 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_abs 1C78 0 CODE 0 text10 dist/default/production/IR_remot.X.production.o
+_adc E7 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_pad 1852 0 CODE 0 text5 dist/default/production/IR_remot.X.production.o
+__end_of_EUSART2_SetFramingErrorHandler 1F68 0 CODE 0 text26 dist/default/production/IR_remot.X.production.o
+__end_of_EUSART2_SetOverrunErrorHandler 1F5A 0 CODE 0 text25 dist/default/production/IR_remot.X.production.o
+_eusart2RxLastError 56 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+_ADCC_Initialize 19FE 0 CODE 0 text30 dist/default/production/IR_remot.X.production.o
+__Ludata_bank10 0 0 ABS 0 udata_bank10 dist/default/production/IR_remot.X.production.o
+__Ludata_bank11 0 0 ABS 0 udata_bank11 dist/default/production/IR_remot.X.production.o
+__Ludata_bank12 0 0 ABS 0 udata_bank12 dist/default/production/IR_remot.X.production.o
+__Ludata_bank13 0 0 ABS 0 udata_bank13 dist/default/production/IR_remot.X.production.o
+__Ludata_bank14 0 0 ABS 0 udata_bank14 dist/default/production/IR_remot.X.production.o
+___aodiv@sign 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_TMR3_DefaultInterruptHandler 1F9A 0 CODE 0 text37 dist/default/production/IR_remot.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/IR_remot.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/IR_remot.X.production.o
+sprintf@fmt BF 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+_TMR1_CallBack 1D56 0 CODE 0 text40 dist/default/production/IR_remot.X.production.o
+_SYSTEM_Initialize 1E92 0 CODE 0 text15 dist/default/production/IR_remot.X.production.o
+_dtoa$1944 36 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_TimerValue 88 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+__end_of_abs 1CB8 0 CODE 0 text10 dist/default/production/IR_remot.X.production.o
+__end_of_pad 1914 0 CODE 0 text5 dist/default/production/IR_remot.X.production.o
+__end_of_ADCC_SetADIInterruptHandler 1F92 0 CODE 0 text31 dist/default/production/IR_remot.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production/IR_remot.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production/IR_remot.X.production.o
+__Hramtop F00 0 RAM 0 ramtop dist/default/production/IR_remot.X.production.o
+strlen@a B 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+strlen@s 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production/IR_remot.X.production.o
+_ADCC_ADI_InterruptHandler D5 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_TMR3_CallBack 1D24 0 CODE 0 text36 dist/default/production/IR_remot.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/IR_remot.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/IR_remot.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/IR_remot.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production/IR_remot.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production/IR_remot.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production/IR_remot.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production/IR_remot.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production/IR_remot.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production/IR_remot.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production/IR_remot.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production/IR_remot.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production/IR_remot.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production/IR_remot.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production/IR_remot.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production/IR_remot.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production/IR_remot.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production/IR_remot.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production/IR_remot.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production/IR_remot.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production/IR_remot.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production/IR_remot.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production/IR_remot.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production/IR_remot.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production/IR_remot.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production/IR_remot.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production/IR_remot.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production/IR_remot.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production/IR_remot.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production/IR_remot.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production/IR_remot.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production/IR_remot.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production/IR_remot.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production/IR_remot.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production/IR_remot.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production/IR_remot.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production/IR_remot.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production/IR_remot.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production/IR_remot.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production/IR_remot.X.production.o
+vfpfcnvrt@fmt 4A 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production/IR_remot.X.production.o
+_PIE1bits EC3 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PIE4bits EC6 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PIE6bits EC8 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+pad@buf 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_TMR1_ISR 1F1A 0 CODE 0 text38 dist/default/production/IR_remot.X.production.o
+__ptext10 1C78 0 CODE 0 text10 dist/default/production/IR_remot.X.production.o
+__ptext11 155C 0 CODE 0 text11 dist/default/production/IR_remot.X.production.o
+__ptext12 13D4 0 CODE 0 text12 dist/default/production/IR_remot.X.production.o
+__ptext13 1D88 0 CODE 0 text13 dist/default/production/IR_remot.X.production.o
+__ptext14 1ED4 0 CODE 0 text14 dist/default/production/IR_remot.X.production.o
+__ptext15 1E92 0 CODE 0 text15 dist/default/production/IR_remot.X.production.o
+__ptext16 1B5E 0 CODE 0 text16 dist/default/production/IR_remot.X.production.o
+__ptext17 1F30 0 CODE 0 text17 dist/default/production/IR_remot.X.production.o
+__ptext18 1BA8 0 CODE 0 text18 dist/default/production/IR_remot.X.production.o
+__ptext19 1F3E 0 CODE 0 text19 dist/default/production/IR_remot.X.production.o
+__ptext20 1EB8 0 CODE 0 text20 dist/default/production/IR_remot.X.production.o
+__ptext21 1A64 0 CODE 0 text21 dist/default/production/IR_remot.X.production.o
+__ptext22 1EEC 0 CODE 0 text22 dist/default/production/IR_remot.X.production.o
+__ptext23 1F92 0 CODE 0 text23 dist/default/production/IR_remot.X.production.o
+__ptext24 1B12 0 CODE 0 text24 dist/default/production/IR_remot.X.production.o
+__ptext25 1F4C 0 CODE 0 text25 dist/default/production/IR_remot.X.production.o
+__ptext26 1F5A 0 CODE 0 text26 dist/default/production/IR_remot.X.production.o
+__ptext27 1F68 0 CODE 0 text27 dist/default/production/IR_remot.X.production.o
+__ptext28 1DB8 0 CODE 0 text28 dist/default/production/IR_remot.X.production.o
+__ptext29 1F76 0 CODE 0 text29 dist/default/production/IR_remot.X.production.o
+__ptext30 19FE 0 CODE 0 text30 dist/default/production/IR_remot.X.production.o
+__ptext31 1F84 0 CODE 0 text31 dist/default/production/IR_remot.X.production.o
+__ptext32 1DE8 0 CODE 0 text32 dist/default/production/IR_remot.X.production.o
+__ptext34 1F04 0 CODE 0 text34 dist/default/production/IR_remot.X.production.o
+__ptext35 1E42 0 CODE 0 text35 dist/default/production/IR_remot.X.production.o
+__ptext36 1D24 0 CODE 0 text36 dist/default/production/IR_remot.X.production.o
+__ptext37 1F98 0 CODE 0 text37 dist/default/production/IR_remot.X.production.o
+__ptext38 1F1A 0 CODE 0 text38 dist/default/production/IR_remot.X.production.o
+__ptext39 1E6A 0 CODE 0 text39 dist/default/production/IR_remot.X.production.o
+__ptext40 1D56 0 CODE 0 text40 dist/default/production/IR_remot.X.production.o
+__ptext41 1F9A 0 CODE 0 text41 dist/default/production/IR_remot.X.production.o
+__ptext42 1E16 0 CODE 0 text42 dist/default/production/IR_remot.X.production.o
+__ptext43 178A 0 CODE 0 text43 dist/default/production/IR_remot.X.production.o
+__ptext44 1CEE 0 CODE 0 text44 dist/default/production/IR_remot.X.production.o
+__ptext45 1F9C 0 CODE 0 text45 dist/default/production/IR_remot.X.production.o
+__ptext46 0 0 CODE 0 text46 dist/default/production/IR_remot.X.production.o
+_TMR3_ISR 1F04 0 CODE 0 text34 dist/default/production/IR_remot.X.production.o
+_TMR3_SetInterruptHandler 1F30 0 CODE 0 text17 dist/default/production/IR_remot.X.production.o
+__end_of_PIN_MANAGER_Initialize 1AC0 0 CODE 0 text21 dist/default/production/IR_remot.X.production.o
+___aodiv 13D4 0 CODE 0 text12 dist/default/production/IR_remot.X.production.o
+___aomod 155C 0 CODE 0 text11 dist/default/production/IR_remot.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production/IR_remot.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production/IR_remot.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production/IR_remot.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production/IR_remot.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production/IR_remot.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/IR_remot.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production/IR_remot.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production/IR_remot.X.production.o
+?_dtoa 24 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_NewIRDat 8A 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production/IR_remot.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production/IR_remot.X.production.o
+__end_of_TMR1_ISR 1F30 0 CODE 0 text38 dist/default/production/IR_remot.X.production.o
+__end_of_TMR3_ISR 1F1A 0 CODE 0 text34 dist/default/production/IR_remot.X.production.o
+SendToUart@st_pt A 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/IR_remot.X.production.o
+_strlen 1CB8 0 CODE 0 text6 dist/default/production/IR_remot.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/IR_remot.X.production.o
+isa$std 1 0 ABS 0 - /tmp/xcXeEHBfA.o
+_TX2STAbits E9E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+stackhi 0 0 ABS 0 - /tmp/xcXeEHBfA.o
+stacklo 0 0 ABS 0 - /tmp/xcXeEHBfA.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production/IR_remot.X.production.o
+_OSCCON1 ED8 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_OSCCON3 EDA 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_OSCTUNE EDD 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production/IR_remot.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production/IR_remot.X.production.o
+_ADCON0bits F60 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON1bits F59 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON2bits F5A 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCON3bits F5B 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__pbssBIGRAM 164 0 BIGRAM 1 bssBIGRAM dist/default/production/IR_remot.X.production.o
+?_vfpfcnvrt 48 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_CCP2_SetCallBack 1F76 0 CODE 0 text29 dist/default/production/IR_remot.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lspace_3 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__pbssCOMRAM 4E 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+_EUSART2_Write 1ED4 0 CODE 0 text14 dist/default/production/IR_remot.X.production.o
+_EUSART2_SetFramingErrorHandler 1F5A 0 CODE 0 text26 dist/default/production/IR_remot.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/IR_remot.X.production.o
+_EUSART2_SetOverrunErrorHandler 1F4C 0 CODE 0 text25 dist/default/production/IR_remot.X.production.o
+_PIR1bits ECB 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PIR3bits ECD 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PIR4bits ECE 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_PIR6bits ED0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+___aodiv@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+___aodiv@dividend 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+end_of_initialization 1C6E 0 CODE 0 cinit dist/default/production/IR_remot.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/IR_remot.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production/IR_remot.X.production.o
+powerup CE 0 CODE 0 powerup build/default/production/powerup.o
+fputc@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+fputs@c 16 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+fputs@i 17 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+fputs@s 12 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+?___aodiv 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+?___aomod 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+vfprintf@fmt B7 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/IR_remot.X.production.o
+TMR1_SetInterruptHandler@InterruptHandler 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/IR_remot.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/IR_remot.X.production.o
+__Lramtop F00 0 RAM 0 ramtop dist/default/production/IR_remot.X.production.o
+_EUSART2_FramingErrorHandler E4 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_EUSART2_OverrunErrorHandler E1 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production/IR_remot.X.production.o
+__pcinit 1C36 0 CODE 0 cinit dist/default/production/IR_remot.X.production.o
+vfpfcnvrt@ap 4C 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+vfpfcnvrt@fp 48 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+vfpfcnvrt@ll AD 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+__ptext0 1914 0 CODE 0 text0 dist/default/production/IR_remot.X.production.o
+__ptext1 1AC0 0 CODE 0 text1 dist/default/production/IR_remot.X.production.o
+__ptext2 1998 0 CODE 0 text2 dist/default/production/IR_remot.X.production.o
+__ptext3 120C 0 CODE 0 text3 dist/default/production/IR_remot.X.production.o
+__ptext4 F2E 0 CODE 0 text4 dist/default/production/IR_remot.X.production.o
+__ptext5 1852 0 CODE 0 text5 dist/default/production/IR_remot.X.production.o
+__ptext6 1CB8 0 CODE 0 text6 dist/default/production/IR_remot.X.production.o
+__ptext7 1BF2 0 CODE 0 text7 dist/default/production/IR_remot.X.production.o
+__ptext8 16C0 0 CODE 0 text8 dist/default/production/IR_remot.X.production.o
+__ptext9 1F96 0 CODE 0 text9 dist/default/production/IR_remot.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/IR_remot.X.production.o
+vfprintf@ap B9 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+vfprintf@fp B5 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+vfprintf@cfmt BB 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production/IR_remot.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production/IR_remot.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production/IR_remot.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production/IR_remot.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production/IR_remot.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production/IR_remot.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production/IR_remot.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production/IR_remot.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production/IR_remot.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production/IR_remot.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production/IR_remot.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production/IR_remot.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production/IR_remot.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production/IR_remot.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production/IR_remot.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production/IR_remot.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production/IR_remot.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production/IR_remot.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production/IR_remot.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production/IR_remot.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production/IR_remot.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production/IR_remot.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production/IR_remot.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production/IR_remot.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production/IR_remot.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production/IR_remot.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production/IR_remot.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production/IR_remot.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production/IR_remot.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production/IR_remot.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production/IR_remot.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production/IR_remot.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production/IR_remot.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production/IR_remot.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production/IR_remot.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production/IR_remot.X.production.o
+__end_of_CCP2_CaptureISR 1852 0 CODE 0 text43 dist/default/production/IR_remot.X.production.o
+CCP2_SetCallBack@customCallBack 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__ramtop F00 0 RAM 0 ramtop /tmp/xcXeEHBfA.o
+_sprintf 1AC0 0 CODE 0 text1 dist/default/production/IR_remot.X.production.o
+_vfprintf 1998 0 CODE 0 text2 dist/default/production/IR_remot.X.production.o
+__Lpowerup CE 0 CODE 0 powerup dist/default/production/IR_remot.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/IR_remot.X.production.o
+__Ludata_bank0 0 0 ABS 0 udata_bank0 dist/default/production/IR_remot.X.production.o
+__Ludata_bank1 0 0 ABS 0 udata_bank1 dist/default/production/IR_remot.X.production.o
+__Ludata_bank2 0 0 ABS 0 udata_bank2 dist/default/production/IR_remot.X.production.o
+__Ludata_bank3 0 0 ABS 0 udata_bank3 dist/default/production/IR_remot.X.production.o
+__Ludata_bank4 0 0 ABS 0 udata_bank4 dist/default/production/IR_remot.X.production.o
+__Ludata_bank5 0 0 ABS 0 udata_bank5 dist/default/production/IR_remot.X.production.o
+__Ludata_bank6 0 0 ABS 0 udata_bank6 dist/default/production/IR_remot.X.production.o
+__Ludata_bank7 0 0 ABS 0 udata_bank7 dist/default/production/IR_remot.X.production.o
+__Ludata_bank8 0 0 ABS 0 udata_bank8 dist/default/production/IR_remot.X.production.o
+__Ludata_bank9 0 0 ABS 0 udata_bank9 dist/default/production/IR_remot.X.production.o
+sprintf@ap C3 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+TMR1_WriteTimer@timerVal 1 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+__end_of_TMR1_Initialize 1BF2 0 CODE 0 text18 dist/default/production/IR_remot.X.production.o
+__end_of_TMR1_WriteTimer 1E92 0 CODE 0 text39 dist/default/production/IR_remot.X.production.o
+__psmallconst F00 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+_EUSART2_DefaultErrorHandler 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_TMR1_CallBack 1D88 0 CODE 0 text40 dist/default/production/IR_remot.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/IR_remot.X.production.o
+__end_of_vfprintf 19FE 0 CODE 0 text2 dist/default/production/IR_remot.X.production.o
+_SLRCONA F0E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_SLRCONB F16 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_SLRCONC F1E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXeEHBfA.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXeEHBfA.o
+_ADCC_DefaultInterruptHandler 1F9C 0 CODE 0 text45 dist/default/production/IR_remot.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/IR_remot.X.production.o
+__end_of__initialization 1C6E 0 CODE 0 cinit dist/default/production/IR_remot.X.production.o
+__end_of_TMR3_CallBack 1D56 0 CODE 0 text36 dist/default/production/IR_remot.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/IR_remot.X.production.o
+_EUSART2_ErrorHandler DE 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_ADSTATbits F65 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TMR3_InterruptHandler D2 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_SP2BRGH E9C 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_SP2BRGL E9B 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/IR_remot.X.production.o
+_timer1ReloadVal ED 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_TMR1_DefaultInterruptHandler 1F9A 0 CODE 0 text41 dist/default/production/IR_remot.X.production.o
+__end_of_CCP2_SetCallBack 1F84 0 CODE 0 text29 dist/default/production/IR_remot.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_T3CONbits FC9 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_EUSART2_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_EUSART2_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_timer3ReloadVal EB 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_CCP2_CaptureISR 178A 0 CODE 0 text43 dist/default/production/IR_remot.X.production.o
+sprintf@f C5 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+sprintf@s BD 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+__end_of_dtoa 120C 0 CODE 0 text4 dist/default/production/IR_remot.X.production.o
+__end_of_main 1998 0 CODE 0 text0 dist/default/production/IR_remot.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production/IR_remot.X.production.o
+_ADACQ F5C 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADACT F56 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCAP F5D 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCLK F57 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADCNT F67 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADPCH F5F 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADPRE F5E 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADREF F58 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_ADRPT F66 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hudata_acs 0 0 ABS 0 udata_acs dist/default/production/IR_remot.X.production.o
+__end_of_fputc 178A 0 CODE 0 text8 dist/default/production/IR_remot.X.production.o
+__end_of_fputs 1C36 0 CODE 0 text7 dist/default/production/IR_remot.X.production.o
+?_sprintf BD 0 BANK0 1 cstackBANK0 dist/default/production/IR_remot.X.production.o
+_MyBuf 60 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+_OSCEN EDC 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T1CLK FD2 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T1CON FCF 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T3CLK FCC 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_T3CON FC9 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TMR1H FCE 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TMR1L FCD 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TMR3H FC8 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TMR3L FC7 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TRISA F88 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TRISB F89 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_TRISC F8A 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_putch 1F98 0 CODE 0 text9 dist/default/production/IR_remot.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production/IR_remot.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production/IR_remot.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production/IR_remot.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production/IR_remot.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production/IR_remot.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production/IR_remot.X.production.o
+ADCC_SetADIInterruptHandler@InterruptHandler 9 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_TMR1_Initialize 1BA8 0 CODE 0 text18 dist/default/production/IR_remot.X.production.o
+_dummy E9 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_TMR1_WriteTimer 1E6A 0 CODE 0 text39 dist/default/production/IR_remot.X.production.o
+_flags 50 0 COMRAM 1 bssCOMRAM dist/default/production/IR_remot.X.production.o
+_fputc 16C0 0 CODE 0 text8 dist/default/production/IR_remot.X.production.o
+_fputs 1BF2 0 CODE 0 text7 dist/default/production/IR_remot.X.production.o
+_putch 1F96 0 CODE 0 text9 dist/default/production/IR_remot.X.production.o
+_width 82 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+_CCP2CAP FA9 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_CCP2CON FA8 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+_CCP2PPS EB0 0 ABS 0 - dist/default/production/IR_remot.X.production.o
+__end_of_OSCILLATOR_Initialize 1F04 0 CODE 0 text22 dist/default/production/IR_remot.X.production.o
+__initialization 1C36 0 CODE 0 cinit dist/default/production/IR_remot.X.production.o
+_ADCC_GetSingleConversion 1DE8 0 CODE 0 text32 dist/default/production/IR_remot.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production/IR_remot.X.production.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production/IR_remot.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/IR_remot.X.production.o
+__Hsmallconst F2E 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+dtoa@d 26 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+dtoa@i 46 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+dtoa@n 3E 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+dtoa@p 38 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+dtoa@s 3C 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+dtoa@w 3A 0 COMRAM 1 cstackCOMRAM dist/default/production/IR_remot.X.production.o
+_TMR1_SetInterruptHandler 1F3E 0 CODE 0 text19 dist/default/production/IR_remot.X.production.o
+__Ludata_acs 0 0 ABS 0 udata_acs dist/default/production/IR_remot.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/IR_remot.X.production.o
+__end_of_EUSART2_Write 1EEC 0 CODE 0 text14 dist/default/production/IR_remot.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/IR_remot.X.production.o
+__Hintcode CE 0 CODE 0 intcode dist/default/production/IR_remot.X.production.o
+_TMR1_InterruptHandler DB 0 BANK0 1 nvBANK0 dist/default/production/IR_remot.X.production.o
+_ADCC_SetADIInterruptHandler 1F84 0 CODE 0 text31 dist/default/production/IR_remot.X.production.o
+_OSCILLATOR_Initialize 1EEC 0 CODE 0 text22 dist/default/production/IR_remot.X.production.o
+__end_of_KEYCODE F19 0 SMALLCONST 0 smallconst dist/default/production/IR_remot.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text4 0 F2E F2E 1070 1
+cstackCOMRAM 1 1 1 57 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 8F 1
+bssBANK1 1 100 100 64 1
+intcode 0 8 8 D0 1
+smallconst 0 F00 F00 2E 1
+bssBIGRAM 1 164 164 7D0 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,222 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15344 ]
+[d frameptr 6 ]
+"10 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"5 /home/mohit/MPLABXProjects/RC5_manchester.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"58 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+"91
+[v _CLC2_ISR CLC2_ISR `(v  1 e 1 0 ]
+"97
+[v _CLC2_OutputStatusGet CLC2_OutputStatusGet `(a  1 e 1 0 ]
+"52 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S193 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"427 /home/mohit/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.10.174/xc8/pic/include/proc/pic16f15344.h
+[u S198 . 1 `S193 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES198  1 e 1 @11 ]
+"598
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"643
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"682
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"744
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"789
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+"828
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+[s S138 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 CLC1IF 1 0 :1:4 
+`uc 1 CLC2IF 1 0 :1:5 
+`uc 1 CLC3IF 1 0 :1:6 
+`uc 1 CLC4IF 1 0 :1:7 
+]
+"8119
+[u S145 . 1 `S138 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES145  1 e 1 @1809 ]
+[s S155 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 CLC1IE 1 0 :1:4 
+`uc 1 CLC2IE 1 0 :1:5 
+`uc 1 CLC3IE 1 0 :1:6 
+`uc 1 CLC4IE 1 0 :1:7 
+]
+"8408
+[u S162 . 1 `S155 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES162  1 e 1 @1819 ]
+"8506
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"8551
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"8599
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"8644
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"8694
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"8734
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"9796
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"9936
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"9970
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"10022
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"10068
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"10126
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"12761
+[v _CLC2CON CLC2CON `VEuc  1 e 1 @7706 ]
+[s S88 . 1 `uc 1 LC2MODE 1 0 :3:0 
+`uc 1 LC2INTN 1 0 :1:3 
+`uc 1 LC2INTP 1 0 :1:4 
+`uc 1 LC2OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 LC2EN 1 0 :1:7 
+]
+"12794
+[s S95 . 1 `uc 1 LC2MODE0 1 0 :1:0 
+`uc 1 LC2MODE1 1 0 :1:1 
+`uc 1 LC2MODE2 1 0 :1:2 
+]
+[s S99 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 INTN 1 0 :1:3 
+`uc 1 INTP 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+[s S106 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+[u S110 . 1 `S88 1 . 1 0 `S95 1 . 1 0 `S99 1 . 1 0 `S106 1 . 1 0 ]
+[v _CLC2CONbits CLC2CONbits `VES110  1 e 1 @7706 ]
+"12879
+[v _CLC2POL CLC2POL `VEuc  1 e 1 @7707 ]
+"12957
+[v _CLC2SEL0 CLC2SEL0 `VEuc  1 e 1 @7708 ]
+"13061
+[v _CLC2SEL1 CLC2SEL1 `VEuc  1 e 1 @7709 ]
+"13165
+[v _CLC2SEL2 CLC2SEL2 `VEuc  1 e 1 @7710 ]
+"13269
+[v _CLC2SEL3 CLC2SEL3 `VEuc  1 e 1 @7711 ]
+"13373
+[v _CLC2GLS0 CLC2GLS0 `VEuc  1 e 1 @7712 ]
+"13485
+[v _CLC2GLS1 CLC2GLS1 `VEuc  1 e 1 @7713 ]
+"13597
+[v _CLC2GLS2 CLC2GLS2 `VEuc  1 e 1 @7714 ]
+"13709
+[v _CLC2GLS3 CLC2GLS3 `VEuc  1 e 1 @7715 ]
+"16463
+[v _CLCIN0PPS CLCIN0PPS `VEuc  1 e 1 @7867 ]
+"16521
+[v _CLCIN1PPS CLCIN1PPS `VEuc  1 e 1 @7868 ]
+"16579
+[v _CLCIN2PPS CLCIN2PPS `VEuc  1 e 1 @7869 ]
+"17863
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @7974 ]
+"17951
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"17996
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"18046
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"18091
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"18136
+[v _INLVLA INLVLA `VEuc  1 e 1 @7996 ]
+"18336
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"18375
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"18414
+[v _ODCONB ODCONB `VEuc  1 e 1 @8005 ]
+"18453
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @8006 ]
+"18492
+[v _INLVLB INLVLB `VEuc  1 e 1 @8007 ]
+"18648
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"18710
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"18772
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"18834
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"18896
+[v _INLVLC INLVLC `VEuc  1 e 1 @8018 ]
+"4 /home/mohit/MPLABXProjects/RC5_manchester.X/main.c
+[v _output output `[50]us  1 e 100 @8588 ]
+[v _kl kl `us  1 e 2 0 ]
+"5
+[v _main main `(v  1 e 1 0 ]
+{
+"26
+} 0
+"50 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"74
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"55 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"117
+} 0
+"58 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"58 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+{
+"89
+} 0
+"97
+[v _CLC2_OutputStatusGet CLC2_OutputStatusGet `(a  1 e 1 0 ]
+{
+"100
+} 0
+"52 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"70
+} 0
+"91 /home/mohit/MPLABXProjects/RC5_manchester.X/mcc_generated_files/clc2.c
+[v _CLC2_ISR CLC2_ISR `(v  1 e 1 0 ]
+{
+"95
+} 0

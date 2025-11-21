@@ -1,0 +1,96 @@
+
+
+Microchip MPLAB XC8 Assembler V2.35 build 20211206165544 
+                                                                                                           Sat Apr 30 18:14:57 2022
+
+
+     1                           	processor	18F27K40
+     2                           	pagewidth 132
+     3                           	opt	flic
+     4                           	psect	udata_acs,global,class=COMRAM,space=1,delta=1,lowdata,noexec
+     5                           	psect	udata_bank0,global,class=BANK0,space=1,delta=1,lowdata,noexec
+     6                           	psect	udata_bank1,global,class=BANK1,space=1,delta=1,lowdata,noexec
+     7                           	psect	udata_bank2,global,class=BANK2,space=1,delta=1,lowdata,noexec
+     8                           	psect	udata_bank3,global,class=BANK3,space=1,delta=1,lowdata,noexec
+     9                           	psect	udata_bank4,global,class=BANK4,space=1,delta=1,lowdata,noexec
+    10                           	psect	udata_bank5,global,class=BANK5,space=1,delta=1,lowdata,noexec
+    11                           	psect	udata_bank6,global,class=BANK6,space=1,delta=1,lowdata,noexec
+    12                           	psect	udata_bank7,global,class=BANK7,space=1,delta=1,lowdata,noexec
+    13                           	psect	udata_bank8,global,class=BANK8,space=1,delta=1,lowdata,noexec
+    14                           	psect	udata_bank9,global,class=BANK9,space=1,delta=1,lowdata,noexec
+    15                           	psect	udata_bank10,global,class=BANK10,space=1,delta=1,lowdata,noexec
+    16                           	psect	udata_bank11,global,class=BANK11,space=1,delta=1,lowdata,noexec
+    17                           	psect	udata_bank12,global,class=BANK12,space=1,delta=1,lowdata,noexec
+    18                           	psect	udata_bank13,global,class=BANK13,space=1,delta=1,lowdata,noexec
+    19                           	psect	udata_bank14,global,class=BANK14,space=1,delta=1,lowdata,noexec
+    20                           	psect	udata,global,class=RAM,space=1,delta=1,noexec
+    21                           	psect	code,global,reloc=2,class=CODE,delta=1
+    22                           	psect	data,global,reloc=2,class=CONST,delta=1,noexec
+    23                           	psect	edata,global,class=EEDATA,space=3,delta=2,noexec
+    24                           	psect	powerup,global,reloc=2,class=CODE,delta=1
+    25  0000                     
+    26                           	psect	edata
+    27  0000                     stk_offset	set	0
+    28  0000                     auto_size	set	0
+    29                           
+    30                           ; stack_auto defines a symbol /name/_offset which equates to the
+    31                           ; stack offset of the auto object in question
+    32  000000                     
+    33                           ; stack_param defines a symbol /name/_offset which equates to the
+    34                           ; stack offset of the parameter object in question
+    35  000000                     
+    36                           ; alloc_stack adjusts the SP to allocate space for auto objects
+    37                           ; it also links in to the btemp symbol so that can be used
+    38  000000                     
+    39                           ; restore_stack adjusts the SP to remove all auto and parameter
+    40                           ; objects from the stack prior to returning from a function
+    41  000000                     
+    42                           	psect	powerup
+    43  0000CE                     powerup:
+    44                           	callstack 0
+    45  0000CE  8E81               	bsf	3969,7,c
+    46  0000D0  EF6A  F000         	goto	start
+    47                           tosu	equ	0xFFF
+    48                           tosh	equ	0xFFE
+    49                           tosl	equ	0xFFD
+    50                           stkptr	equ	0xFFC
+    51                           pclatu	equ	0xFFB
+    52                           pclath	equ	0xFFA
+    53                           pcl	equ	0xFF9
+    54                           tblptru	equ	0xFF8
+    55                           tblptrh	equ	0xFF7
+    56                           tblptrl	equ	0xFF6
+    57                           tablat	equ	0xFF5
+    58                           prodh	equ	0xFF4
+    59                           prodl	equ	0xFF3
+    60                           indf0	equ	0xFEF
+    61                           postinc0	equ	0xFEE
+    62                           postdec0	equ	0xFED
+    63                           preinc0	equ	0xFEC
+    64                           plusw0	equ	0xFEB
+    65                           fsr0h	equ	0xFEA
+    66                           fsr0l	equ	0xFE9
+    67                           wreg	equ	0xFE8
+    68                           indf1	equ	0xFE7
+    69                           postinc1	equ	0xFE6
+    70                           postdec1	equ	0xFE5
+    71                           preinc1	equ	0xFE4
+    72                           plusw1	equ	0xFE3
+    73                           fsr1h	equ	0xFE2
+    74                           fsr1l	equ	0xFE1
+    75                           bsr	equ	0xFE0
+    76                           indf2	equ	0xFDF
+    77                           postinc2	equ	0xFDE
+    78                           postdec2	equ	0xFDD
+    79                           preinc2	equ	0xFDC
+    80                           plusw2	equ	0xFDB
+    81                           fsr2h	equ	0xFDA
+    82                           fsr2l	equ	0xFD9
+    83                           status	equ	0xFD8
+
+
+Microchip Technology PIC18 Macro Assembler V2.35 build 20211206165544 
+Symbol Table                                                                                               Sat Apr 30 18:14:57 2022
+
+                          start 00D4                          NVMCON1 000F81                          isa$std 000001  
+                        powerup 00CE                        isa$xinst 000000  
